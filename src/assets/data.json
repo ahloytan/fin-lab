@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "assetName": "Apple Inc",
+    "symbol": "AAPL",
+    "category": "US Stock",
+    "quantity": 15,
+    "averageCost": 182.45,
+    "currentPrice": 150.00,
+    "purchaseDate": "2025-01-15"
+  },
+  {
+    "id": 2,
+    "assetName": "Microsoft",
+    "symbol": "MSFT",
+    "category": "US Stock",
+    "quantity": 8,
+    "averageCost": 395.2,
+    "currentPrice": 443.76,
+    "purchaseDate": "2024-12-08"
+  },
+  {
+    "id": 3,
+    "assetName": "NVIDIA",
+    "symbol": "NVDA",
+    "category": "US Stock",
+    "quantity": 20,
+    "averageCost": 118.5,
+    "currentPrice": 142.18,
+    "purchaseDate": "2025-03-10"
+  },
+  {
+    "id": 4,
+    "assetName": "Tesla",
+    "symbol": "TSLA",
+    "category": "US Stock",
+    "quantity": 12,
+    "averageCost": 278.9,
+    "currentPrice": 302.84,
+    "purchaseDate": "2024-11-20"
+  },
+  {
+    "id": 5,
+    "assetName": "Amazon",
+    "symbol": "AMZN",
+    "category": "US Stock",
+    "quantity": 10,
+    "averageCost": 176.8,
+    "currentPrice": 223.15,
+    "purchaseDate": "2025-02-05"
+  },
+  {
+    "id": 6,
+    "assetName": "Alphabet",
+    "symbol": "GOOGL",
+    "category": "US Stock",
+    "quantity": 7,
+    "averageCost": 168.25,
+    "currentPrice": 194.67,
+    "purchaseDate": "2025-01-28"
+  },
+  {
+    "id": 7,
+    "assetName": "Meta Platforms",
+    "symbol": "META",
+    "category": "US Stock",
+    "quantity": 5,
+    "averageCost": 495.6,
+    "currentPrice": 718.42,
+    "purchaseDate": "2024-10-12"
+  },
+  {
+    "id": 8,
+    "assetName": "Palantir",
+    "symbol": "PLTR",
+    "category": "US Stock",
+    "quantity": 35,
+    "averageCost": 32.8,
+    "currentPrice": 49.35,
+    "purchaseDate": "2025-04-01"
+  },
+  {
+    "id": 9,
+    "assetName": "DBS Group",
+    "symbol": "D05",
+    "category": "SG Stock",
+    "quantity": 120,
+    "averageCost": 39.85,
+    "currentPrice": 43.18,
+    "purchaseDate": "2025-02-18"
+  },
+  {
+    "id": 10,
+    "assetName": "OCBC Bank",
+    "symbol": "O39",
+    "category": "SG Stock",
+    "quantity": 150,
+    "averageCost": 14.25,
+    "currentPrice": 15.72,
+    "purchaseDate": "2025-03-25"
+  },
+  {
+    "id": 11,
+    "assetName": "United Overseas Bank",
+    "symbol": "U11",
+    "category": "SG Stock",
+    "quantity": 90,
+    "averageCost": 34.5,
+    "currentPrice": 36.84,
+    "purchaseDate": "2025-01-07"
+  },
+  {
+    "id": 12,
+    "assetName": "Singapore Airlines",
+    "symbol": "C6L",
+    "category": "SG Stock",
+    "quantity": 200,
+    "averageCost": 6.72,
+    "currentPrice": 7.18,
+    "purchaseDate": "2024-09-18"
+  },
+  {
+    "id": 13,
+    "assetName": "CapitaLand Integrated Commercial Trust",
+    "symbol": "C38U",
+    "category": "REIT",
+    "quantity": 500,
+    "averageCost": 2.01,
+    "currentPrice": 2.12,
+    "purchaseDate": "2025-02-11"
+  },
+  {
+    "id": 14,
+    "assetName": "SPDR S&P 500 ETF",
+    "symbol": "SPY",
+    "category": "ETF",
+    "quantity": 6,
+    "averageCost": 542.3,
+    "currentPrice": 617.41,
+    "purchaseDate": "2024-08-14"
+  },
+  {
+    "id": 15,
+    "assetName": "Invesco QQQ Trust",
+    "symbol": "QQQ",
+    "category": "ETF",
+    "quantity": 8,
+    "averageCost": 471.9,
+    "currentPrice": 548.36,
+    "purchaseDate": "2025-01-04"
+  },
+  {
+    "id": 16,
+    "assetName": "Vanguard Total World Stock ETF",
+    "symbol": "VT",
+    "category": "ETF",
+    "quantity": 10,
+    "averageCost": 114.2,
+    "currentPrice": 126.58,
+    "purchaseDate": "2025-02-20"
+  },
+  {
+    "id": 17,
+    "assetName": "Bitcoin",
+    "symbol": "BTC",
+    "category": "Cryptocurrency",
+    "quantity": 0.25,
+    "averageCost": 92150,
+    "currentPrice": 108340,
+    "purchaseDate": "2025-04-12"
+  },
+  {
+    "id": 18,
+    "assetName": "Ethereum",
+    "symbol": "ETH",
+    "category": "Cryptocurrency",
+    "quantity": 2.5,
+    "averageCost": 3250,
+    "currentPrice": 3820,
+    "purchaseDate": "2025-03-08"
+  },
+  {
+    "id": 19,
+    "assetName": "Solana",
+    "symbol": "SOL",
+    "category": "Cryptocurrency",
+    "quantity": 30,
+    "averageCost": 132.8,
+    "currentPrice": 176.43,
+    "purchaseDate": "2025-02-14"
+  },
+  {
+    "id": 20,
+    "assetName": "Gold SPDR ETF",
+    "symbol": "GLD",
+    "category": "ETF",
+    "quantity": 12,
+    "averageCost": 221.6,
+    "currentPrice": 248.72,
+    "purchaseDate": "2024-12-30"
+  }
+]
