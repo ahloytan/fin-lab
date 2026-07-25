@@ -10,6 +10,10 @@ export class ThemeService {
      */
     isDarkMode: WritableSignal<boolean> = signal<boolean>(false);
 
+    constructor() {
+        this.isDarkMode.set(this.getState());
+    }
+
     setBackground(): void {
         const image: string = this.getState() ? 'dark' : 'light';
         document.getElementById('main')!.style.background = `url('/assets/images/bg-${image}.png') no-repeat center center fixed`;

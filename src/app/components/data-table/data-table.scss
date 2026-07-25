@@ -25,7 +25,18 @@ table {
   }
 }
 
+.filter {
+  margin-top: 0.8rem;
+}
+
 mat-paginator.dark-mode {
-  --mat-sys-surface: #111827; // Custom deep brown for dark mode cards
-  --mat-sys-on-surface: #f3f4f6; // Custom amber text for dark mode cards
+  --mat-sys-surface: #111827;
+  --mat-sys-on-surface: #f3f4f6;
+}
+
+
+mat-chip-option {
+  &.dark-mode {
+    color-scheme: dark;
+  }
 }

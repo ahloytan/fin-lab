@@ -2,6 +2,7 @@
   <mat-chip-listbox>
     @for (category of CATEGORIES; track category) {
       <mat-chip-option 
+        [ngClass]="{'dark-mode': _themeService.isDarkMode()}"
         [selected]="dataSource.filter === category"
         (selectionChange)="selectCategory(category)"
       >
@@ -13,10 +14,12 @@
     }
   </mat-chip-listbox>
 
-  <mat-form-field>
-    <mat-label>Filter</mat-label>
-    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
-  </mat-form-field>
+  <div class="filter">
+    <mat-form-field>
+      <mat-label>Filter</mat-label>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
+    </mat-form-field>
+  </div>
 
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z2" [ngClass]="{'dark-mode': _themeService.isDarkMode()}">
 
