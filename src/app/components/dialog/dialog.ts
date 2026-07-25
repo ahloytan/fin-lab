@@ -5,6 +5,8 @@ import { MAT_DIALOG_DATA, MatDialogActions, MatDialogClose, MatDialogContent, Ma
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { UserForm } from '../user-form/user-form';
+import { DialogService } from './dialog.service';
+import { finalize } from 'rxjs';
 
 @Component({
   selector: 'app-dialog',
@@ -20,7 +22,8 @@ export class Dialog {
   isFormValid: boolean = false;
 
   constructor(
-    @Inject(MAT_DIALOG_DATA) public data: any
+    @Inject(MAT_DIALOG_DATA) public data: any,
+    public _dialogService: DialogService
   ) {
 
   }
@@ -44,8 +47,31 @@ export class Dialog {
     }
   
     if (this.isFormValid) {
-      const newRecord = this.formComponent.portfolioForm.getRawValue()
-      this.dialogRef.close(newRecord);
+      const record = this.formComponent.portfolioForm.getRawValue();
+      /**
+       * Calls external free API from Alpha Vantage to get symbol last price
+       */
+      this.getLastClosePrice(record);
     }
+  }
+
+  private getLastClosePrice(record: any): void {
+    let transformedRecord: any;
+    this._dialogService.getLastClosePrice(record.symbol)
+    .pipe(finalize(() => {
+      this.dialogRef.close(transformedRecord);
+    }))
+    .subscribe({
+      next: (data) => {
+        const currentPrice = data?.['Global Quote']?.['05. price'] || 0;
+        transformedRecord = {
+          ...record,
+          currentPrice
+        };
+      },
+      error: (error) => {
+        console.log(error)
+      }
+    })
   }
 }

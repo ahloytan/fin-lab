@@ -161,36 +161,6 @@
   },
   {
     "id": 17,
-    "assetName": "Bitcoin",
-    "symbol": "BTC",
-    "category": "Cryptocurrency",
-    "quantity": 0.25,
-    "averageCost": 92150,
-    "currentPrice": 108340,
-    "purchaseDate": "2025-04-12"
-  },
-  {
-    "id": 18,
-    "assetName": "Ethereum",
-    "symbol": "ETH",
-    "category": "Cryptocurrency",
-    "quantity": 2.5,
-    "averageCost": 3250,
-    "currentPrice": 3820,
-    "purchaseDate": "2025-03-08"
-  },
-  {
-    "id": 19,
-    "assetName": "Solana",
-    "symbol": "SOL",
-    "category": "Cryptocurrency",
-    "quantity": 30,
-    "averageCost": 132.8,
-    "currentPrice": 176.43,
-    "purchaseDate": "2025-02-14"
-  },
-  {
-    "id": 20,
     "assetName": "Gold SPDR ETF",
     "symbol": "GLD",
     "category": "ETF",

@@ -1,3 +1,4 @@
+<a name="readme-top"></a>
 # FinLab
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.19.
@@ -7,53 +8,40 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 To start a local development server, run:
 
 ```bash
-ng serve
+npm run start
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+## Docs
+- Slides
+- [Tech Stack](#tech-stack)
+- [Contact Me](#contact-me)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Pre-requisites
+1. Ensure you have [Node.js](https://nodejs.org/en/download) installed
 
-```bash
-ng generate component component-name
-```
+## Tech Stack
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Frontend
+1. Open command prompt, enter `cd frontend`
+2. If this is your first time setting up, type `npm i`
+3. Create `environment.ts` in `src/app/environments` folder. Add a variable called `ALPHA_VANTAGE_API_KEY`. You can get a free API key here (https://www.alphavantage.co/)
+4. Launch the project using `npm run dev`
 
-```bash
-ng generate --help
-```
+#### Framework
+[Angular.js](https://angular.dev/tools/cli), [Typescript](https://www.typescriptlang.org/) <br>
+![My Skills](https://skillicons.dev/icons?i=angular,ts&perline=3)
 
-## Building
+#### Styling
+[SASS](https://sass-lang.com/), [CSS](https://www.w3schools.com/css/), [Angular Material](https://material.angular.dev/)<br>
+![My Skills](https://skillicons.dev/icons?i=sass,css,materialui&perline=3)
 
-To build the project run:
+### Deployment
+[Vercel](https://vercel.com/)<br>
+![My Skills](https://skillicons.dev/icons?i=vercel&perline=3)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Contact Me
+1. To explore more of my works, head over to [Portfolio Website](https://ahloytan.netlify.app)
+2. Feel free to contact me if there are issues or if there are opportunities that I can help you with!
