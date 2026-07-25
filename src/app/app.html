@@ -1,4 +1,4 @@
-<main class="main">
+<main id="main" class="main">
   <div>
     <div class="content">
       <div class="left-side">
@@ -147,13 +147,14 @@
     </div>
     <div id="main-content">
       <div class="table">
-        <app-data-table></app-data-table>
+        <app-data-table [portfolioData]="data()"></app-data-table>
       </div>
-      <div class="add-item">
+      <div class="action-buttons">
         <button matButton="filled" (click)="openDialog()">
           <mat-icon>add_circle_outline</mat-icon>
           Add Item
         </button>
+        <mat-slide-toggle [checked]="_themeService.isDarkMode()" (change)="saveState($event)"></mat-slide-toggle>
       </div>
     </div>
   </div>

@@ -18,7 +18,7 @@
     <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
   </mat-form-field>
 
-  <table mat-table [dataSource]="dataSource" class="mat-elevation-z2">
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z2" [ngClass]="{'dark-mode': _themeService.isDarkMode()}">
 
     <ng-container matColumnDef="assetName">
       <th mat-header-cell *matHeaderCellDef> Asset </th>
@@ -90,9 +90,10 @@
   </table>
 
   <mat-paginator 
-      [pageSizeOptions]="PAGE_SIZE"
-      showFirstLastButtons
-      aria-label="Select page of periodic elements"
+    [ngClass]="{'dark-mode': _themeService.isDarkMode()}"
+    [pageSizeOptions]="PAGE_SIZE"
+    showFirstLastButtons
+    aria-label="Select page of periodic elements"
   >
   </mat-paginator>  
 </div>

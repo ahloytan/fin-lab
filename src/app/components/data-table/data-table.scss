@@ -16,3 +16,16 @@ table {
   color: red;
   font-weight: 500;
 }
+
+.dark-mode {
+  background: #111827;
+
+  .cdk-header-cell, .cdk-cell {
+    color: #f3f4f6;
+  }
+}
+
+mat-paginator.dark-mode {
+  --mat-sys-surface: #111827; // Custom deep brown for dark mode cards
+  --mat-sys-on-surface: #f3f4f6; // Custom amber text for dark mode cards
+}
