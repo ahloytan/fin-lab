@@ -5,6 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSlideToggleChange, MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { RouterOutlet } from '@angular/router';
 import { ThemeService } from './core/services/theme.service';
 import PORTFOLIO_DATA from '../data/data.json'; 
@@ -18,6 +19,7 @@ import PORTFOLIO_DATA from '../data/data.json';
 export class App {
   protected readonly title = signal('fin-lab');
   private dialog = inject(MatDialog);
+  private _snackBar = inject(MatSnackBar);
   
   /**
   * Data source for the table. Read directly from the imported JSON file.
@@ -43,6 +45,7 @@ export class App {
     }).afterClosed().subscribe((newRecord) => {
       /** Append the new record to the front of existing data array */
       if (newRecord) {
+        this.openSnackBar();
         const record = {
           ...newRecord,
           id: this.data().length + 1,
@@ -73,5 +76,9 @@ export class App {
     return titleCasedString;
   }
 
-
+  openSnackBar(): void {
+    this._snackBar.open("You have successfully added a new record!", "", {
+      duration: 3000
+    });
+  }
 }
