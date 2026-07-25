@@ -14,7 +14,7 @@ npm run start
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
 ## Docs
-- Slides
+- Slides (https://canva.link/sszyr87ku8mi4ku)
 - [Tech Stack](#tech-stack)
 - [Contact Me](#contact-me)
 
@@ -40,6 +40,17 @@ Once the server is running, open your browser and navigate to `http://localhost:
 ### Deployment
 [Vercel](https://vercel.com/)<br>
 ![My Skills](https://skillicons.dev/icons?i=vercel&perline=3)
+
+#### Github Actions
+1. When committing into Github, Github Actions will automatically deploy the changes into Vercel
+2. To ensure a successfull workflow run. Do ensure that following variables are in `Settings` --> `Secrets and variables` --> `Actions`
+```
+ALPHA_VANTAGE_API_KEY
+VERCEL_ORG_ID
+VERCEL_PROJECT_ID
+VERCEL_TOKEN
+```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contact Me
