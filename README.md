@@ -26,7 +26,7 @@ Once the server is running, open your browser and navigate to `http://localhost:
 ### Frontend
 1. Open command prompt, direct to the folder where this project is
 2. If this is your first time setting up, type `npm i`
-3. Create `environment.ts` in `src/app/environments` folder. Add a variable called `ALPHA_VANTAGE_API_KEY`. You can get a free API key here (https://www.alphavantage.co/)
+3. Create `environment.ts` in `src/environments` folder. Add the following line ` export const ALPHA_VANTAGE_API_KEY="<enterApiKeyHere>"`. You can get a free API key here (https://www.alphavantage.co/)
 4. Launch the project using `npm run start`
 
 #### Framework
