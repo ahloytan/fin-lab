@@ -18,6 +18,13 @@ jobs:
           cache: npm
 
       - run: npm ci
+      
+      - name: Create environment.ts
+        run: |
+          mkdir -p src/environments
+          cat > src/environments/environment.ts << 'EOF'
+          export const ALPHA_VANTAGE_API_KEY = '${{ secrets.ALPHA_VANTAGE_API_KEY }}';
+          EOF
 
       - run: npm run build
 
