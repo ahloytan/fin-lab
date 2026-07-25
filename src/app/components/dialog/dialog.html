@@ -1,0 +1,10 @@
+<div class="dialog">
+  <h2 mat-dialog-title>Add Item</h2>
+  <mat-dialog-content>
+    <app-user-form [portfolioData]="data.portfolioData" (validityChange)="onValidityChange($event)"></app-user-form>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button matButton mat-dialog-close>Cancel</button>  
+    <button matButton cdkFocusInitial (click)="onSubmit()">Add</button>
+  </mat-dialog-actions>
+</div>
