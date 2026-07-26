@@ -29,6 +29,11 @@ table {
   margin-top: 0.8rem;
 }
 
+.table-scroll-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
 mat-paginator.dark-mode {
   --mat-sys-surface: #111827;
   --mat-sys-on-surface: #f3f4f6;

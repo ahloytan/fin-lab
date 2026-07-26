@@ -56,7 +56,6 @@ p {
 main {
   width: 100%;
   min-height: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
@@ -67,6 +66,11 @@ main {
 
 .angular-logo {
   max-width: 9.2rem;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
 }
 
 .content {

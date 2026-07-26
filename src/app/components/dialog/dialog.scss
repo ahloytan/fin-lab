@@ -1,3 +1,7 @@
 .dialog {
     width: 32rem;
+
+    @media (max-width: 420px) {
+        width: 100%;
+    }
 }
